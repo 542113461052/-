@@ -1,5 +1,4 @@
 package 图形化界面.Student;
-
 import 数据库操作.Seek;
 
 import javax.swing.*;
@@ -10,14 +9,12 @@ public class StudentSignIn {
     JFrame frame;
     JPanel jp1;
     JPanel jp2;
-
     JLabel jl1;
     JLabel jl2;
     JLabel jl3;
     JTextField jtf;
     JPasswordField jpf;
     JButton jb;
-
     public static void main(String[] args) {
         new StudentSignIn();
     }
