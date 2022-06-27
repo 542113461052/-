@@ -307,7 +307,7 @@ public class AssessorSystem {
                                 id = rs.getLong(2);
                                 problem = rs.getString(3);
                                 reply = rs.getString(4);
-                                if(id==aid){
+                                if(reply.equals("无")||id==aid){
                                     continue;
                                 }
                                 String name = null;
@@ -320,7 +320,6 @@ public class AssessorSystem {
                                 while (resultSet.next()){
                                     tableModel.addRow(new Object[]{id, resultSet.getString(1),problem });
                                 }
-
                             }
                             jt.setRowHeight(20);
                         } catch (SQLException a) {
